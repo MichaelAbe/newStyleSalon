@@ -10,8 +10,8 @@
     } --}}
     @foreach($appointments as $a)
     <div>
-        {{ $a['customer'] }} has an appointment with 
-        {{ $a['stylist_id'] }} at 
+        {{ $a['customer'] }} has an appointment with <br/>  
+        {{ $a['stylist_id'] }} at <br/> 
         {{ $a['time_scheduled'] }}
 
     </div>
