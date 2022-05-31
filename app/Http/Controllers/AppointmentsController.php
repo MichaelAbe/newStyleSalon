@@ -40,7 +40,10 @@ class AppointmentsController extends Controller
     }
 
     public function show($id){
-        return view('/appointments.show', ['id'=> $id]);
+
+        $appointment = Appointment::find($id);
+
+        return view('/appointments.show', ['appointment'=> $appointment]);
     }
 
     public function create(){
