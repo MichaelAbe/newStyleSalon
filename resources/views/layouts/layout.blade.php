@@ -21,6 +21,9 @@
         
         <footer>
             FAKE COPYWRITE 2022
+            <a href="/appointments">appointment index</a>
+            <a href="/stylists">stylist index</a>
+            <a href="/appointments/create">add appointment</a>
         </footer>
 
     </body> 

@@ -41,7 +41,7 @@ class AppointmentsController extends Controller
 
     public function show($id){
 
-        $appointment = Appointment::find($id);
+        $appointment = Appointment::findOrFail($id);
 
         return view('/appointments.show', ['appointment'=> $appointment]);
     }
