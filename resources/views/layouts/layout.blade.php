@@ -18,12 +18,22 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
+            footer{
+                background: #f0eeff;
+                padding: 20px;
+                text-align: center;
+            }
         </style>
     </head>
     <body class="antialiased">
 
         @yield('content')
-            
-    </body>
+        
+        <footer>
+            FAKE COPYWRITE 2022
+        </footer>
+
+    </body> 
 </html>
     
