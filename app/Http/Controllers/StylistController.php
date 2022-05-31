@@ -37,13 +37,13 @@ class StylistController extends Controller
     
         error_log($stylists);
 
-        return view('stylists', 
+        return view('stylists.index', 
         ['stylists' => $stylists
         ]
      );
     }
 
     public function show($id){
-        return view('show', ['id'=> $id]);
+        return view('stylists.show', ['id'=> $id]);
     }
 }

@@ -34,13 +34,12 @@ class AppointmentsController extends Controller
     
      
     
-        return view('appointments', 
-        ['appointments' => $appointments,
-        ]
+        return view('/appointments.index', 
+        ['appointments' => $appointments]
      );
     }
 
     public function show($id){
-        return view('appview', ['id'=> $id]);
+        return view('/appointments.show', ['id'=> $id]);
     }
 }
