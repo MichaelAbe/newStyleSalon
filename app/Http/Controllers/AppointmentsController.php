@@ -44,6 +44,6 @@ class AppointmentsController extends Controller
     }
 
     public function show($id){
-        return view('show', ['id'=> $id]);
+        return view('appview', ['id'=> $id]);
     }
 }
