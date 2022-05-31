@@ -3,7 +3,7 @@
 @section('content')
     
 <div>
-    <h1>Stylists index page</h1>
+    <h1>Stylists Show Page</h1>
     {{-- <p>{{ $name }}</p>
     <p>{{ $specialty }}</p>
     <p>{{ $bio }}</p>
@@ -11,14 +11,7 @@
     {{-- this is taking the variable that was passed in the route --}}
     
 
-    @foreach($stylists as $s)
-        <div>
-            {{ $s['name']}}
-
-        </div>
-    @endforeach
-
-    <p>hello this is a {{ $test }}</p>
+    <p>hello this is a the Show page for {{ $id }}</p>
     
 </div>
 

@@ -41,5 +41,20 @@ Route::get('/stylists', function () {
         'bio' => 'fave color red'
         ]
     ];
-    return view('stylists', ['stylists' => $stylists] );
+
+    $test =request('test');
+
+    return view('stylists', 
+    ['stylists' => $stylists,
+    "test" => $test,
+    ]
+ );
 });
+
+Route::get('/stylists/{id}', function ($id) {
+    return view('show', ['id'=> $id]);
+});
+
+// Route::get('/stylists/3', function () {
+//     return view('welcome');
+// });
