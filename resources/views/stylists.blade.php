@@ -24,7 +24,14 @@
         <div>
             <h1>Stylists index page</h1>
             <p>{{ $name }}</p>
+            <p>{{ $specialty }}</p>
+            <p>{{ $bio }}</p>
+            <p>{{ $picture }}</p>
             {{-- this is taking the variable that was passed in the route --}}
+
+            @if($name)
+                <p>There is a name: {{ $name }}</p>
+            @endif
         </div>
     </body>
 </html>
