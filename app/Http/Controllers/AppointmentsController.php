@@ -42,4 +42,8 @@ class AppointmentsController extends Controller
     public function show($id){
         return view('/appointments.show', ['id'=> $id]);
     }
+
+    public function create(){
+        return view('/appointments.create');
+    }
 }
