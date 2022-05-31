@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/stylists', function () {
-    return view('stylists');
+    //get data from db and pass into view.
+    return view('stylists', ['name' =>'Stylist name variable']);
 });

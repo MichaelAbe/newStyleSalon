@@ -23,6 +23,8 @@
     <body class="antialiased">
         <div>
             <h1>Stylists index page</h1>
-        </div>>
+            <p>{{ $name }}</p>
+            {{-- this is taking the variable that was passed in the route --}}
+        </div>
     </body>
 </html>
