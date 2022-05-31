@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body class="antialiased">
+        <nav>
+            nav place holder
+        </nav>
 
         @yield('content')
         
