@@ -19,11 +19,27 @@ Route::get('/', function () {
 
 Route::get('/stylists', function () {
     //get data from db and pass into view.
-    $stylist = [
-        'name' =>'Stylist name variable',
-        'specialty' => 'what they specialize in',
+    $stylists = [
+        ['name' =>'Leo', 
+        'specialty' => 'cutting',
         'picture' => 'a picture of the stylist',
-        'bio' => 'a short bio of the stylist'
+        'bio' => 'leader fave color blue'
+        ],
+        ['name' =>'Mich',
+        'specialty' => 'conditioning',
+        'picture' => 'a picture of the stylist',
+        'bio' => 'fave color orange'
+        ],
+        ['name' =>'Donny',
+        'specialty' => 'color',
+        'picture' => 'a picture of the stylist',
+        'bio' => 'fave color purple'
+        ],
+        ['name' =>'Ralph',
+        'specialty' => 'conditioning',
+        'picture' => 'a picture of the stylist',
+        'bio' => 'fave color red'
+        ]
     ];
-    return view('stylists', $stylist);
+    return view('stylists', ['stylists' => $stylists] );
 });
