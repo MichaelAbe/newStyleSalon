@@ -26,13 +26,7 @@ class AppointmentsController extends Controller
             ],
         ];
 
-        // Schema::create('appointments', function (Blueprint $table) {
-        //     $table->id();
-        //     $table->timestamps();
-        //     $table->string('time_scheduled');
-        //     $table->string('customer');
-        //     $table->integer('stylist_id');
-        // });
+
     
         $test =request('test');
     

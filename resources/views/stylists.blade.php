@@ -13,12 +13,17 @@
 
     @foreach($stylists as $s)
         <div>
-            {{ $s['name']}}
+            {{-- {{ $s['name']}} --}}
+            name: {{ $s['name']}} . <br/>
+            specialty: {{ $s['specialty']}} <br/>
+            bio: {{ $s['bio']}} <br/>
+            
+            
 
         </div>
     @endforeach
 
-    <p>hello this is a {{ $test }}</p>
+   
     
 </div>
 
