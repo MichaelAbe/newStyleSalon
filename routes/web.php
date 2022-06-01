@@ -36,6 +36,8 @@ Route::get('/appointments', [AppointmentsController::class, 'index']);
 
 Route::get('/appointments/create', [AppointmentsController::class, 'create']);
 
+Route::get('/appointments', [AppointmentsController::class, 'store']);
+
 Route::get('/appointments/{id}', [AppointmentsController::class, 'show']);
 
 Route::get('/test', function(){
