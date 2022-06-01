@@ -63,12 +63,17 @@ class AppointmentsController extends Controller
         $app->name = request('name');
         $app->email = request('email');
         $app->mobile = request('mobile');
-        $app->time = request('time');
+        
+        $unformatted = request('time');
+        $findSlash = "/\\\\/i";
+        $app->time = preg_replace($findSlash, '', $unformatted);
+        
+
         $app->stylist_id = request('stylist_id');
 
-        error_log($app);
+        error_log($app['time']);
 
-        $app->save();
+        // $app->save();
 
         return redirect('/');
     }
