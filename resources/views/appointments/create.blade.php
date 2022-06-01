@@ -6,7 +6,8 @@
     <h1>Create appointment page</h1>
    
     <div class="wrapper create-appointment">
-        <form action="" method="">
+        <form action="/appointments" method="POST">
+            @csrf
             <label for="name">name</label>
             <input type="text" id="name" name="name">
             <label for="email">email</label>
@@ -15,8 +16,8 @@
             <input type="text" id="mobile" name="mobile">
             
             <div class="form-group">
-                <div class='input-group date' id='CalendarDateTime'>
-                <input type='text' class="form-control" />
+                <div class='input-group date' id='CalendarDateTime' name='time' >
+                <input type='text' class="form-control" id='time' name='time'/>
                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
             </div>

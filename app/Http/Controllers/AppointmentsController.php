@@ -49,4 +49,27 @@ class AppointmentsController extends Controller
     public function create(){
         return view('/appointments.create');
     }
+
+    public function store(){
+        // error_log(request('name'));
+        // error_log(request('email'));
+        // error_log(request('mobile'));
+        // error_log(request('time'));
+        // error_log(request('stylist_id'));
+
+
+        $app = new Appointment();
+
+        $app->name = request('name');
+        $app->email = request('email');
+        $app->mobile = request('mobile');
+        $app->time = request('time');
+        $app->stylist_id = request('stylist_id');
+
+        error_log($app);
+
+        $app->save();
+
+        return redirect('/');
+    }
 }

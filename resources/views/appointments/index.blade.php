@@ -10,17 +10,21 @@
     } --}}
     @foreach($appointments as $a)
     <div>
-        {{ $a['customer'] }} has an appointment with <br/>  
-        {{ $a['stylist_id'] }} at <br/> 
-        {{ $a['time_scheduled'] }}
+        name: {{ $a['name'] }} <br/>  
+        stylist id: {{ $a['stylist_id'] }} <br/> 
+        time: {{ $a['time'] }} <br/>
+        email: {{ $a['email'] }} <br/>
+        mobile: {{ $a['mobile'] }} <br/>
 
     </div>
 @endforeach
-{{--     
-['time_scheduled' =>'night', 
-'customer' => 'customer 4',
-'stylist_id' => '4',
-], --}}
+
+
+{{-- $table->string('name');
+$table->string('email');
+$table->string('mobile');
+$table->dateTime('time');
+$table->integer('stylist_id'); --}}
     
 </div>
 
