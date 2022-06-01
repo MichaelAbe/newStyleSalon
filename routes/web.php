@@ -38,3 +38,6 @@ Route::get('/appointments/create', [AppointmentsController::class, 'create']);
 
 Route::get('/appointments/{id}', [AppointmentsController::class, 'show']);
 
+Route::get('/test', function(){
+    return view('test');
+});
